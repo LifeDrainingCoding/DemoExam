@@ -1,0 +1,13 @@
+
+.table-view {
+    -fx-background-color: white;
+    -fx-font-family: Constantia;
+}
+.table-view .list-cell{
+    -fx-background-color: #AED0FF;
+}
+.table-view .column-header *{
+    -fx-background-color:  #BFD6F6 ;
+    -fx-text-fill: black;
+    -fx-font-family: Constantia;
+}

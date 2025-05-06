@@ -1,0 +1,6 @@
+.root{
+    -fx-background-color:  #BFD6F6 ;
+}
+.text-field .prompt-text{
+    -fx-text-fill: black;
+}

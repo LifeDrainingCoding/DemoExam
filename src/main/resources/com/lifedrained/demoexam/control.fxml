@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="root" stylesheets="@style/Background.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lifedrained.demoexam.controller.DataController">
+   <padding>
+      <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+   </padding>
+   <children>
+      <Label stylesheets="@style/Label.css" text="Список полей ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox fx:id="fieldContainer" alignment="TOP_CENTER" prefHeight="531.0" prefWidth="580.0" styleClass="root" stylesheets="@style/Background.css">
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <VBox alignment="TOP_CENTER" stylesheets="@style/Background.css" HBox.hgrow="SOMETIMES">
+               <children>
+                  <Button fx:id="addBtn" mnemonicParsing="false" stylesheets="@style/Button.css" text="Добавить">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="updateBtn" mnemonicParsing="false" stylesheets="@style/Button.css" text="Изменить">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="delBtn" mnemonicParsing="false" stylesheets="@style/Button.css" text="Удалить">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="backBtn" mnemonicParsing="false" stylesheets="@style/Button.css" text="Вернуться">
+                     <font>
+                        <Font name="Constantia" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="importBtn" mnemonicParsing="false" stylesheets="@style/Button.css" text="Импорт данных">
+                     <font>
+                        <Font name="Constantia" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

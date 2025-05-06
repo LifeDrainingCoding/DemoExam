@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.1"
+             xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+    https://jakarta.ee/xml/ns/persistence/orm/orm_3_1.xsd">
+
+    <persistence-unit name="pers" >
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Сущности (модели) -->
+        <class>com.lifedrained.demoexam.entity.Product</class>
+        <class>com.lifedrained.demoexam.entity.Material</class>
+        <class>com.lifedrained.demoexam.entity.MaterialProducts</class>
+        <class>com.lifedrained.demoexam.entity.MaterialType</class>
+        <class>com.lifedrained.demoexam.entity.ProductType</class>
+
+        <!-- Настройки БД (MySQL) перезаписываются в EMUtils -->
+<!--        <properties>-->
+<!--            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db?createDatabaseIfNotExist=true"/>-->
+<!--            <property name="jakarta.persistence.jdbc.user" value="root"/>-->
+<!--            <property name="jakarta.persistence.jdbc.password" value="dk137dark3"/>-->
+<!--            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>-->
+
+<!--            &lt;!&ndash; Опции Hibernate &ndash;&gt;-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>-->
+<!--            <property name="hibernate.hbm2ddl.auto" value="update"/> &lt;!&ndash; update/create-drop/none &ndash;&gt;-->
+<!--            <property name="hibernate.show_sql" value="true"/>-->
+<!--        </properties>-->
+    </persistence-unit>
+</persistence>
