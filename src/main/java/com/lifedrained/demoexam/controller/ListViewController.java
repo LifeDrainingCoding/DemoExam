@@ -14,7 +14,7 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 
-//Контроллер списка склада с материалам
+//Контроллер списка склада с материалами
 public class ListViewController {
    @FXML
     private ListView<Material> list;

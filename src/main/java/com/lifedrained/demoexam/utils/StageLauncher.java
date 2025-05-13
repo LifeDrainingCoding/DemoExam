@@ -35,28 +35,4 @@ public class StageLauncher {
         });
 
     }
-    public static void launch(Node node, String fxmlPath, boolean isRegistered){
-        Platform.runLater(()->{
-            Stage currentStage = (Stage) node.getScene().getWindow();
-
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource(fxmlPath));
-            Stage loadStage = new Stage();
-            loadStage.initModality(Modality.APPLICATION_MODAL);
-            try {
-
-                Scene scene =new Scene(loader.load());
-                scene.getProperties().put("isRegistered", isRegistered);
-                loadStage.setScene(scene);
-                loadStage.show();
-                currentStage.close();
-
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        });
-
-
-    }
-
-
 }

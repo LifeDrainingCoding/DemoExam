@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Date;
 
-//Утилитарный класс для парсинга и форматтирования дат(НЕ ИСПОЛЬЗУЕТСЯ)
+//Утилитарный класс для парсинга и форматирования дат(НЕ ИСПОЛЬЗУЕТСЯ)
 public class DateUtils {
     public static final String DB_DT_FORMAT = "yyyy-MM-dd HH:mm:ss";
     private static final String DB_DATE_FORMAT = "yyyy-MM-dd";

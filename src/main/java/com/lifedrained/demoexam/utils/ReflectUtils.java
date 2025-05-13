@@ -15,7 +15,7 @@ import java.util.List;
 
 //Утилитарный класс для парсинга аргументов
 public class ReflectUtils {
-    //Парсит аргументы в указнный класс
+    //Парсит аргументы в указанный класс
     public static <T> Object parseArgument(Class<T> clazz , String value) {
         value = value.trim().replaceAll("[\r\n]", "");
         if (clazz == Boolean.class || clazz == boolean.class) {

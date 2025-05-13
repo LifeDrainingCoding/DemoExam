@@ -28,7 +28,7 @@ public class ExcelParser {
     public static String DELIMITER = ";";
     public static String LINE_SEPARATOR = "\n";
 
-    //ассинхронный метод парсинга в CSV
+    //асинхронный метод парсинга в CSV
     public static void parseExcelToCSV(File file, BiConsumer<List<String>, Throwable> whenComplete) {
 
         new Thread(() -> {
